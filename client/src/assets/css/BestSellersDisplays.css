@@ -1,0 +1,27 @@
+.bookshelf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.book {
+    width: 160px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.book img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+.book-info h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+.book-info p {
+    font-size: 14px;
+    color: #666;
+}

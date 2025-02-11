@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Proza+Libre");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* CUSTOM PROPERTIES */
+:root {
+    --title-font-family: "McLaren", sans-serif;
+    --default-font-family: "Roboto", sans-serif;
+    --default-font-size: 1.25rem;
+    --default-text-color: #111;
+    --neutral-color: #4e4e4e;
+
+    --primary-color: dodgerblue;
+    --primary-color-dark: darkblue;
+    --primary-background-color: whitesmoke;
+    --secondary-background-color: burlywood;
+    --card-background-color: #050404;
+}
+
+/* RESET */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font-family);
+    line-height: 1;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+/* UTILITY CLASSES */
+.flow-content > * + * {
+    margin-top: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    }
+.dark-background {
+    background-color: var(--neutral-color);
+    color: whitesmoke;
+}
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 100;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/*.header, .footer {*/
+/*    width: 100%;*/
+/*    padding: 10px 20px;*/
+/*    box-sizing: border-box;*/
+/*}*/
+/* BUTTONS */
+.button,
+.button:visited {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: var(--primary-color-dark);
+    color: white;
+}
+
+/* LINKS */
+a, a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: var(--primary-color-dark);
+    text-decoration: underline;
+}
+

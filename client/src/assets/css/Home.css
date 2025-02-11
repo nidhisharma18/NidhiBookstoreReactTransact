@@ -1,0 +1,18 @@
+.home-pages  {
+    display: flex;
+
+}
+.welcome-text {
+    width: 30em;
+    background-color: var(--neutral-color);
+    color: whitesmoke;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.flow-content > * + * {
+    margin-top: 1rem;
+}
+
+.container {
+    padding: 2rem;
+}

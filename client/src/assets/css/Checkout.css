@@ -1,0 +1,116 @@
+.checkout-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+    background-image: url("../images/bestsellers/bg1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column; /* Stack content vertically */
+}
+
+.checkout-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content at the start */
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.cart-section {
+    flex: 1;
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-section {
+    flex: 1;
+    max-width: 45%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: auto; /* Center the form section within the layout */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.95em;
+    color: #495057;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #ac0d0d; /* Highlight border */
+    background-color: white;
+}
+
+.expiry-date-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.expiry-date-container select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.checkout-buttons {
+    text-align: center; /* Center the checkout button */
+    margin-top: 20px;
+}
+
+.checkout-button {
+    background-color: #ac0d0d;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #b92c28;
+}
+
+@media (max-width: 768px) {
+    .checkout-layout {
+        flex-direction: column; /* Stack sections vertically for smaller screens */
+        gap: 20px;
+    }
+
+    .cart-section,
+    .form-section {
+        max-width: 100%; /* Make sections full-width */
+    }
+}

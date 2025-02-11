@@ -1,0 +1,258 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+#GET http://localhost:8080/NidhiBookstoreReactTransact/api/categories
+#Accept: application/json
+
+### Test Valid Order
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mandeep Saini",
+    "address": "123 Main Street",
+    "phone": "1234567890",
+    "email": "s@example.com",
+    "creditCard": {
+      "number": "4111111111111111",
+      "expiryMonth": "01",
+      "expiryYear": "2024"
+    }
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1001,
+          "categoryId": 1001,
+          "price": 13
+        },
+        "quantity": 1
+      },
+      {
+        "book": {
+          "bookId": 1002,
+          "categoryId": 1001,
+          "price": 8
+        },
+        "quantity": 1
+      }
+    ],
+    "surcharge": 500
+  }
+}
+
+
+### Test Order with Empty Cart
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mandeep Saini",
+    "address": "123 Main Street",
+    "phone": "1234567890",
+    "email": "s@example.com",
+    "creditCard": {
+      "number": "4111111111111111",
+      "expiryMonth": "12",
+      "expiryYear": "2024"
+    }
+  },
+  "cart": {
+    "itemArray": [],
+    "surcharge": 500
+  }
+}
+
+### Test Order with Missing Customer Information
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mandeep Saini",
+    "address": "",
+    "phone": "1234567890",
+    "email": "s@gmail.com",
+    "creditCard": {
+      "number": "4111111111111111",
+      "expiryMonth": "12",
+      "expiryYear": "2024"
+    }
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1003,
+          "categoryId": 1001,
+          "price": 9
+        },
+        "quantity": 2
+      }
+    ],
+    "surcharge": 500
+  }
+}
+
+### Test Order with Invalid Credit Card
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mandeep Saini",
+    "address": "123 Main Street",
+    "phone": "1234567890",
+    "email": "s@example.com",
+    "creditCard": {
+      "number": "1234",
+      "expiryMonth": "12",
+      "expiryYear": "2024"
+    }
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1003,
+          "categoryId": 1001,
+          "price": 9
+        },
+        "quantity": 2
+      }
+    ],
+    "surcharge": 500
+  }
+}
+
+### Test Order with Past Expiry Date
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Mandeep Saini",
+    "address": "123 Main Street",
+    "phone": "1234567890",
+    "email": "s@example.com",
+    "creditCard": {
+      "number": "5714619117461571",
+      "expiryMonth": "01",
+      "expiryYear": "2024"
+    }
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1004,
+          "categoryId": 1001,
+          "price": 12
+        },
+        "quantity": 1
+      }
+    ],
+    "surcharge": 500
+  }
+}
+
+### Test Order with Empty Expiry Month
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Monica",
+    "address": "123 Main St",
+    "phone": "4085551212",
+    "email": "monica@email.com",
+    "creditCard": {
+      "number": "4444333322221111",
+      "expiryMonth": "",
+      "expiryYear": "2024"
+    }
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1005,
+          "categoryId": 1001,
+          "price": 9
+        },
+        "quantity": 1
+      }
+    ],
+    "surcharge": 500
+  }
+}
+
+### Test Order with Empty Expiry Year
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Monica",
+    "address": "123 Main St",
+    "phone": "4085551212",
+    "email": "monica@email.com",
+    "creditCard": {
+      "number": "4444333322221111",
+      "expiryMonth": "12",
+      "expiryYear": ""
+    }
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1005,
+          "categoryId": 1001,
+          "price": 9
+        },
+        "quantity": 1
+      }
+    ],
+    "surcharge": 500
+  }
+}
+
+### Test Order with Both Expiry Month and Year Empty
+POST http://localhost:8080/NidhiBookstoreReactTransact/api/orders
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Monica",
+    "address": "123 Main St",
+    "phone": "4085551212",
+    "email": "monica@email.com",
+    "creditCard": {
+      "number": "4444333322221111",
+      "expiryMonth": "",
+      "expiryYear": ""
+    }
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1005,
+          "categoryId": 1001,
+          "price": 9
+        },
+        "quantity": 1
+      }
+    ],
+    "surcharge": 500
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/NidhiBookstoreReactTransact/static/css/main.de27e5e2.css",
+    "main.js": "/NidhiBookstoreReactTransact/static/js/main.bde502b2.js",
+    "static/media/quietbook.png": "/NidhiBookstoreReactTransact/static/media/quietbook.78f106731326f305465b.png",
+    "static/media/spy.png": "/NidhiBookstoreReactTransact/static/media/spy.4f4e444ef4a947914d0b.png",
+    "static/media/hunter.png": "/NidhiBookstoreReactTransact/static/media/hunter.a4d3f01ef989ffafe9ab.png",
+    "static/media/un.png": "/NidhiBookstoreReactTransact/static/media/un.dcd7352e1c1f9622cd69.png",
+    "static/media/blind.png": "/NidhiBookstoreReactTransact/static/media/blind.918404bae53deec77ea0.png",
+    "static/media/murder.png": "/NidhiBookstoreReactTransact/static/media/murder.e76116d9f413482cc862.png",
+    "static/media/starts.png": "/NidhiBookstoreReactTransact/static/media/starts.ee91987f7aefc798f91d.png",
+    "static/media/spirit.png": "/NidhiBookstoreReactTransact/static/media/spirit.c1d2d4a815af72e8fcae.png",
+    "static/media/solvem.png": "/NidhiBookstoreReactTransact/static/media/solvem.ec5ec5be48d779a2f842.png",
+    "static/media/dead.png": "/NidhiBookstoreReactTransact/static/media/dead.b8411d037f6f320e5e2b.png",
+    "static/media/flash.png": "/NidhiBookstoreReactTransact/static/media/flash.4818e37d2cb8eb1d5ef4.png",
+    "static/media/house.png": "/NidhiBookstoreReactTransact/static/media/house.e7bb8b1586051430b5f4.png",
+    "static/media/six.png": "/NidhiBookstoreReactTransact/static/media/six.42216ce2d3b2f7c70947.png",
+    "static/media/thor.png": "/NidhiBookstoreReactTransact/static/media/thor.542919efe8e961ebac25.png",
+    "static/media/cart-img.png": "/NidhiBookstoreReactTransact/static/media/cart-img.51dcaffe234afb943180.png",
+    "static/media/maid.png": "/NidhiBookstoreReactTransact/static/media/maid.9c9d4d6b7554604c5bbc.png",
+    "static/media/bg1.png": "/NidhiBookstoreReactTransact/static/media/bg1.4ad30c6dfd76f2725d26.png",
+    "static/media/map.png": "/NidhiBookstoreReactTransact/static/media/map.31d6de63c863d74a2a71.png",
+    "static/media/cc.png": "/NidhiBookstoreReactTransact/static/media/cc.6b7a9ae525aed5c2d2b5.png",
+    "static/media/instagram.png": "/NidhiBookstoreReactTransact/static/media/instagram.79b46d828828a30f609a.png",
+    "static/media/dragon.gif": "/NidhiBookstoreReactTransact/static/media/dragon.4c49e087aa620069d4a4.gif",
+    "static/media/classics.jpg": "/NidhiBookstoreReactTransact/static/media/classics.3eb59cfce62548ebfd19.jpg",
+    "static/media/the-iliad.gif": "/NidhiBookstoreReactTransact/static/media/the-iliad.9d719517420c8044e766.gif",
+    "static/media/the-brothers-karamazov.gif": "/NidhiBookstoreReactTransact/static/media/the-brothers-karamazov.4982f5b4619a9ef84914.gif",
+    "static/media/search.jpg": "/NidhiBookstoreReactTransact/static/media/search.0b786a668f9b4ad091eb.jpg",
+    "static/media/little-dorrit.gif": "/NidhiBookstoreReactTransact/static/media/little-dorrit.efde18fca9bb33eb8a6e.gif",
+    "static/media/x.png": "/NidhiBookstoreReactTransact/static/media/x.de1b903e0942a12476ff.png",
+    "static/media/fb.jpg": "/NidhiBookstoreReactTransact/static/media/fb.94af18c368ad91113ea8.jpg",
+    "static/media/fb.png": "/NidhiBookstoreReactTransact/static/media/fb.94af18c368ad91113ea8.png",
+    "index.html": "/NidhiBookstoreReactTransact/index.html",
+    "main.de27e5e2.css.map": "/NidhiBookstoreReactTransact/static/css/main.de27e5e2.css.map",
+    "main.bde502b2.js.map": "/NidhiBookstoreReactTransact/static/js/main.bde502b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de27e5e2.css",
+    "static/js/main.bde502b2.js"
+  ]
+}
